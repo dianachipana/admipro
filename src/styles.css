@@ -1,0 +1,73 @@
+.banner {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+    padding: 80px 200px;
+
+}
+
+.banner h1 {
+    font-size: 80px;
+}
+.banner p {
+    font-size: 18px;
+}
+
+.banner.home {
+    background: linear-gradient(0deg, rgba(245,133,112,1) 0%, rgba(248,194,70,1) 100%); 
+     display: flex;
+}
+
+.banner.premium {
+    background: #509bf5;
+
+}
+
+.banner.help {
+    background: linear-gradient(0deg, rgba(50,74,185,1) 0%, rgba(33,47,103,1) 100%);
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.login.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    height: 100%;
+}
+
+.login .container-fluid form {
+    width: 300px;
+    max-width: 100%;
+}
+
+.new-releases {
+    background: black;
+    
+}
+
+.loading i {
+    font-size: 48px;
+    animation: spinner 1.3s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+
+}

@@ -1,0 +1,43 @@
+
+<div class="container py-3">
+
+    <div class="row" >
+        <div class="col-2">
+            <img src="assets/image/no-img.png" class="img-thumbnail img-circle">
+        </div>
+
+        <div class="col">
+            <h3>Artista X</h3>
+            <p>
+                <a href="#" target="_blank">Ir a la página del artista</a>
+            </p>
+        </div>
+
+        <div class="col-4 text-right">
+            <a  routerLinkActive="active" routerLink="/principal/new-releases" class="btn btn-outline-danger">
+                Regresar
+            </a>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div  class="col">
+            <table  class="table">
+                <tr>
+                    <th *ngFor ="let t of titulos" width="10%">{{t}}</th>
+                </tr>
+                <tr>
+                    <tr *ngFor ="let music of music" >
+                        <td>
+                            <img [src]="music.imagen" class="img-thumb" height="50">
+                        </td>
+                        <td>{{music.album}}</td>
+                        <td>{{music.cancion}}</td>
+                        <td>
+                            <audio src="#" controls></audio>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</div>
